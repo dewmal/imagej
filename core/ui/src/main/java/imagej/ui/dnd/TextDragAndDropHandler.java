@@ -61,8 +61,18 @@ public class TextDragAndDropHandler extends AbstractDragAndDropHandler {
 	public static final String MIME_TYPE =
 		"text/plain; class=java.lang.String; charset=Unicode";
 
-	private static final String[] TEXT_FILE_EXTENSIONS = { "txt", "ijm", "java",
-		"js", "html", "htm", "bsh", "rb", "py", "" };
+	private static final String[] TEXT_FILE_EXTENSIONS = { "txt", // text files
+		"ijm", // imagej macro files
+		"java", // java files
+		"js", // javascript files
+		"html", // html files
+		"htm", // html files
+		"bsh", // bash script files
+		"rb", // ruby files
+		"py", // python files
+		"clj", // clojure files
+		"" // files with no extension
+	};
 
 	// -- DragAndDropHandler methods --
 
